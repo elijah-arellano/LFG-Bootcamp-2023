@@ -1,0 +1,4 @@
+transaction-type,amount,date
+Deposit,100,2023-08-17 20:09:51
+Deposit,100,2023-08-17 20:09:53
+Withdraw,50,2023-08-17 20:09:57

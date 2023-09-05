@@ -96,15 +96,12 @@ class Employee:
 # FullTimeEmployee inherits Employee
 class FullTimeEmployee(Employee):
     def __init__(self, id, fName="", lName="", benefits=""):
-        # call the base class constructor
         super().__init__(id, fName, lName)
         self.benefits = benefits
 
-    # override the __repr__() method of the base clasee
     def __repr__(self):
-        return f"FullTimeEmployee({self.id}, '{self.firstName}', '{self.lastName}', '{self.benefits}')"
+        return f"FullTimeEmployee({self.id}, '{self.firstName}', '{self.lastName}','{self.benefits}')"
     
-    # override the __str__() method of the base clasee
     def __str__(self):
         return f"{super().__str__()}, benefits={self.benefits}"
     

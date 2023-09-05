@@ -6,6 +6,7 @@ IMPORTANT : Persist the transactions in a CSV file as and when they are performe
 For CSV file operations, refer : https://docs.python.org/3/library/csv.html
 
 """
+"""
 Menu:
 What operation would you like to do:
     1. Deposit an amount into your account
@@ -13,3 +14,4 @@ What operation would you like to do:
     3. Retrieve current balance
     4. See previous transactions
     5. Close Application
+    """

@@ -29,15 +29,12 @@ print(functools.reduce(lambda x,y: x + y, nos_list, 0))
 
 # Find the number of odd & even numbers from nos_list using reduce
 def count_odd_even(result, no):
-    """ 
     if no % 2 == 0:
         result['even'] += 1
     else:
         result['odd'] += 1
-    return result 
-    """
-    return {'even' : result['even'] + 1, 'odd' : result['odd']} if no % 2 == 0 else { 'odd' : result['odd'] + 1, 'even' : result['even'] }
+    return result
 
-# nos_stats = functools.reduce(count_odd_even, nos_list, {'even' : 0, 'odd' : 0})
-nos_stats = functools.reduce(lambda result, no : {'even' : result['even'] + 1, 'odd' : result['odd']} if no % 2 == 0 else { 'odd' : result['odd'] + 1, 'even' : result['even'] }, nos_list, {'even' : 0, 'odd' : 0})
+nos_stats = functools.reduce(count_odd_even, nos_list, {'even' : 0, 'odd' : 0})
 print(nos_stats)
+

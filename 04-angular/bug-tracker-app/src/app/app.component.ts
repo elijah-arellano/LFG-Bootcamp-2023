@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Observable } from 'rxjs';
+import { AuthService } from './bugs/auth/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +9,10 @@ import { Observable } from 'rxjs';
 export class AppComponent {
   title = 'bug-tracker-app';
 
-  constructor(){
+  constructor(public authService: AuthService) {
     
+  }
+  onBtnLogoutClick() {
+    this.authService.logout()
   }
 }

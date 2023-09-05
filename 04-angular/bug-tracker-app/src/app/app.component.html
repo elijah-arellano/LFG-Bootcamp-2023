@@ -1,9 +1,25 @@
 <h1>Bug Tracker</h1>
 <hr>
+<div *ngIf="authService.IsLoggedIn">
+    <div>Welcome {{authService.CurrentUser.lastname}} {{authService.CurrentUser.firstname}}!</div>
+    <!-- <div>Access Token : {{authService.AccessToken}}</div> -->
+</div>
+
+<!-- links for the routes -->
 <div>
-    <span> [ <a [routerLink]="['']">Home</a> ] </span>
-    <span> [ <a [routerLink]="['bugs']">Bugs</a> ] </span>
-    <span> [ <a [routerLink]="['projects']">Projects</a> ] </span>
+    <div *ngIf="!authService.IsLoggedIn; else logout">
+        <span> [ <a [routerLink]="['/login']">Login</a> ] </span>
+        <span> [ <a [routerLink]="['/register']">Register</a> ] </span>
+    </div>
+    <ng-template #logout>
+        <button (click)="onBtnLogoutClick()">Logout</button>
+    </ng-template>
+    <span> [ <a [routerLink]="['/']">Home</a> ] </span>
+
+    <div *ngIf="authService.IsLoggedIn">
+        <span> [ <a [routerLink]="['/bugs']">Bugs</a> ] </span>
+        <span> [ <a [routerLink]="['/projects']">Projects</a> ] </span>
+    </div>
 </div>
 <!-- 
 <div class="container">

@@ -4,6 +4,8 @@ import { BugOperationService } from "./services/bugOperation.service";
 import { BugsService } from "./services/bugs.service";
 import { SortParams } from "./components/bug-sort/bug-sort.component";
 import { ProjectsService } from "../projects/services/projects.service";
+import { AuthService } from "./auth/auth.service";
+import { HttpClient } from "@angular/common/http";
 
 // using the bugs"Stateless" service
 @Component({
@@ -21,7 +23,9 @@ export class BugsComponent implements OnInit {
 
     constructor(
         public bugsService: BugsService,
-        public projectsService : ProjectsService
+        public projectsService : ProjectsService,
+        public httpClient : HttpClient,
+        public authService : AuthService
     ) {
         console.log('bugsComponent - instance created')
     }

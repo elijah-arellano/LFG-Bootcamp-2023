@@ -1,0 +1,15 @@
+<h3>Login</h3>
+<hr>
+<section>
+    <div class="field">
+        <label for="">Email Id :</label>
+        <input type="text" #txtEmailId (input)="emailId = txtEmailId.value">
+    </div>
+    <div class="field">
+        <label for="">Password :</label>
+        <input type="password" #txtPassword (input)="password = txtPassword.value">
+    </div>
+    <div class="field">
+        <button (click)="onBtnLoginClick()">Login</button>
+    </div>
+</section>

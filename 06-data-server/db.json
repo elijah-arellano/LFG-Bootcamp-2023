@@ -1,13 +1,6 @@
 {
   "bugs": [
     {
-      "title": "Data integrity checks failed",
-      "isClosed": true,
-      "createdAt": "2023-08-08T16:26:11.649Z",
-      "projectId": 1,
-      "id": 1
-    },
-    {
       "title": "User actions not recognised",
       "isClosed": false,
       "createdAt": "2023-08-08T16:26:27.581Z",
@@ -29,29 +22,15 @@
       "id": 4
     },
     {
-      "title": "Hacked bug -2",
-      "isClosed": false,
-      "createdAt": "2023-08-09T13:15:01.646Z",
-      "projectId": 6,
-      "id": 5
-    },
-    {
-      "name": "Dummy Data - 72",
-      "createdAt": "2023-08-09T18:26:34.483Z",
-      "isClosed": false,
-      "id": 6
-    },
-    {
       "title": "Dummy Data - 56",
       "createdAt": "2023-08-09T18:27:35.611Z",
       "isClosed": false,
       "id": 7
     },
     {
-      "title": "Dummy Data - 43",
-      "createdAt": "2023-08-09T18:56:09.708Z",
-      "isClosed": false,
-      "id": 9
+      "email": "elijah.arellano@lfg.com",
+      "password": "admin",
+      "id": 8
     }
   ],
   "projects": [
@@ -92,6 +71,11 @@
       "lastname": "Kuppan",
       "age": 45,
       "id": 2
+    },
+    {
+      "email": "elijah.arellano@lfg.com",
+      "password": "admin",
+      "id": 3
     }
   ]
 }

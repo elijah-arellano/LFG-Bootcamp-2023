@@ -1,0 +1,7 @@
+AWSTemplateFormatVersion: 2010-09-09
+Resources:
+  CFServiceInstance:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      ImageId: 'ami-06f621d90fa29f6d0'
+      InstanceType: 't2.micro'

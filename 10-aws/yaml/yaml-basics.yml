@@ -1,0 +1,42 @@
+#Key Value Pairs
+FirstName: Magesh
+LastName: "Kuppan"
+MiddleName: 'Jose'
+Age: 45
+Gpa: 8.5
+Male: true
+EmploymentDate: 2022-10-23T15:30:30Z
+Arrested: null
+
+#YAML Lists
+Students:
+  - Connor
+  - Darrel
+  - Ferfy
+
+# Products: [Pen, Pencil, Marker]
+
+Products:
+  - Pen:
+      Id: P101
+      Name: Fountain Pen
+      Cost: 10
+      Categories:
+        - Stationary
+        - Gift
+      Description: |
+        A stationary item
+        Very useful during academic studies
+
+  - Pencil:
+      Id: P102
+      Name: Plotting Pencil
+      Cost: 5
+      Categories:
+        - Stationary
+        - Gift
+      Description: >
+        In in pariatur laborum adipisicing voluptate cupidatat aliqua anim enim commodo irure esse cupidatat.
+        Aliqua exercitation nisi incididunt tempor magna officia ad et proident consequat eu.
+        Tempor sint minim pariatur excepteur ipsum adipisicing sunt aliqua in aute est.
+      

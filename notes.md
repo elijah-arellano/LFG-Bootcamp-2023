@@ -18,15 +18,15 @@
 - https://github.com/tkmagesh/lfg-bootcamp-2023
 
 ## Subjects ##
-- Frontend dev using JS/TS/Angular (10 days)
+- Frontend dev using JS/TS/Angular 
     - JS
     - Async Programming in JS
     - TS
     - Angular
     
-- Backend dev using Python/Flask (13 days)
-- AWS (13 days)
-- DevOps (Docker/Kubernetes/gitlabs) (8 days)
+- Backend dev using Python/Flask 
+- AWS
+- DevOps (Docker/Kubernetes/gitlabs) 
 
 ## Recommended Books ##
 - Structure and Interpretation of Computer Programs (SICP)
@@ -34,7 +34,11 @@
 - Growing Object Oriented Software Guided By Tests
 - Head First Design Patterns
 - Refactoring
-- Refactoring to Patterns 
+- Refactoring to Patterns
+- Designing Distributed Systems
+- Designing Data Intensive Applications
+- Database Management Systems
+- 7 Databases in 7 weeks
 
 
 

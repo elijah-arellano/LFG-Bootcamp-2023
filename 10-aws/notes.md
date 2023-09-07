@@ -79,3 +79,38 @@
 - aws s3 sync . s3://magesh-s3-website-original
 - aws s3 sync . s3://magesh-s3-website-original --delete 
 - aws s3 mb s3://magesh-test-cli-bucket
+
+## CloudFront ##
+
+## RDS (Relational Database As a Service) ##
+- Supports
+    - Postgres
+    - MySql
+    - Oracle
+    - MariaDB
+    - Microsoft SQL Server
+- Advantages
+    - Automated Provisional (OS patching)
+    - Configure backups
+    - Read replicas
+    - Multi AZ
+    - Uses EBS
+    - Scale UP storage capacity dynamically
+- Disadvantage
+    - NO Scale out
+
+```
+create database my_app_db
+
+CREATE TABLE
+  `users` (
+    `id` int unsigned NOT NULL AUTO_INCREMENT,
+    `firstname` varchar(255) NOT NULL,
+    `lastname` varchar(255) DEFAULT NULL,
+    `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (`id`)
+  ) 
+  
+insert into users (firstname, lastname) values ('','')
+
+```
